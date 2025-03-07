@@ -1,0 +1,1 @@
+.\venv\Scripts\python manage.py runserver 192.168.27.252:8000
