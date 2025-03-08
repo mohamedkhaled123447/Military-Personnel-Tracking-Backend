@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-2=m^i^^jjuwembo*zb&gl+=n)^7pz9u%yc8q8wb#rth#$#radd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -127,6 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATIC_ROOT='staticfiles'
 MEDIA_URL = "/media/"
 MEDIA_ROOT = str(BASE_DIR.joinpath("media"))
 # Default primary key field type
@@ -145,14 +146,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://192.168.27.252:3001",
     "http://192.168.27.252:3002",
     "http://localhost:5173",
-]
-ALLOWED_HOSTS = [
-    "example.com", 
-    "www.example.com",  
-    "192.168.27.252",  
-    "192.168.1.2",  
-    "localhost",  
-    "127.0.0.1", 
 ]
 
 from datetime import timedelta
